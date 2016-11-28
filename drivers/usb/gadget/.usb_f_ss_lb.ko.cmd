@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/usb_f_ss_lb.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o drivers/usb/gadget/usb_f_ss_lb.ko drivers/usb/gadget/usb_f_ss_lb.o drivers/usb/gadget/usb_f_ss_lb.mod.o

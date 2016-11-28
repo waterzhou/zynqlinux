@@ -1,0 +1,1 @@
+cmd_net/ipv6/xfrm6_mode_beet.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o net/ipv6/xfrm6_mode_beet.ko net/ipv6/xfrm6_mode_beet.o net/ipv6/xfrm6_mode_beet.mod.o

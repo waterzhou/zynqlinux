@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/g_zero.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o drivers/usb/gadget/g_zero.ko drivers/usb/gadget/g_zero.o drivers/usb/gadget/g_zero.mod.o
