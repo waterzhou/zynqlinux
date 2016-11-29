@@ -1,4 +1,4 @@
-cmd_scripts/conmakehash := gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/tools/include  -o scripts/conmakehash scripts/conmakehash.c  
+cmd_scripts/conmakehash := gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/home/water/zynqAndroid/kk3.10/zynqlinux/tools/include  -o scripts/conmakehash scripts/conmakehash.c  
 
 source_scripts/conmakehash := scripts/conmakehash.c
 

@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/vmlinux.lds := arm-xilinx-linux-gnueabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian    -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
+cmd_arch/arm/kernel/vmlinux.lds := arm-xilinx-linux-gnueabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/kk3.10/zynqlinux/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian    -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
 
 source_arch/arm/kernel/vmlinux.lds := arch/arm/kernel/vmlinux.lds.S
 
@@ -35,10 +35,10 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
     $(wildcard include/config/unused/symbols.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/cache.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/thread_info.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/crunch.h) \
     $(wildcard include/config/arm/thumbee.h) \
   include/linux/compiler.h \
@@ -46,10 +46,10 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
     $(wildcard include/config/kprobes.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/fpstate.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/memory.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
@@ -60,7 +60,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/phys/offset.h) \
     $(wildcard include/config/arm/patch/phys/virt.h) \
     $(wildcard include/config/virt/to/bus.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/const.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/const.h \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
@@ -68,7 +68,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
   include/uapi/linux/types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   include/uapi/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
@@ -80,7 +80,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/page.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
     $(wildcard include/config/cpu/copy/feroceon.h) \

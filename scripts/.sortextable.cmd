@@ -1,4 +1,4 @@
-cmd_scripts/sortextable := gcc -Wp,-MD,scripts/.sortextable.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/tools/include -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/tools/include -o scripts/sortextable scripts/sortextable.c  
+cmd_scripts/sortextable := gcc -Wp,-MD,scripts/.sortextable.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/home/water/zynqAndroid/kk3.10/zynqlinux/tools/include -I/home/water/zynqAndroid/kk3.10/zynqlinux/tools/include -o scripts/sortextable scripts/sortextable.c  
 
 source_scripts/sortextable := scripts/sortextable.c
 
@@ -69,8 +69,8 @@ deps_scripts/sortextable := \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/tools/include/tools/be_byteshift.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/tools/include/tools/le_byteshift.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/tools/include/tools/be_byteshift.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/tools/include/tools/le_byteshift.h \
   scripts/sortextable.h \
 
 scripts/sortextable: $(deps_scripts/sortextable)

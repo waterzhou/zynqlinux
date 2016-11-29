@@ -1,1 +1,0 @@
-cmd_drivers/remoteproc/mb_remoteproc.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o drivers/remoteproc/mb_remoteproc.ko drivers/remoteproc/mb_remoteproc.o drivers/remoteproc/mb_remoteproc.mod.o

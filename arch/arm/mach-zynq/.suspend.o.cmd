@@ -1,9 +1,9 @@
-cmd_arch/arm/mach-zynq/suspend.o := arm-xilinx-linux-gnueabi-gcc -Wp,-MD,arch/arm/mach-zynq/.suspend.o.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian  -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float      -Wa,-march=armv7-a -mcpu=cortex-a9   -c -o arch/arm/mach-zynq/suspend.o arch/arm/mach-zynq/suspend.S
+cmd_arch/arm/mach-zynq/suspend.o := arm-xilinx-linux-gnueabi-gcc -Wp,-MD,arch/arm/mach-zynq/.suspend.o.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/kk3.10/zynqlinux/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian  -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float      -Wa,-march=armv7-a -mcpu=cortex-a9   -c -o arch/arm/mach-zynq/suspend.o arch/arm/mach-zynq/suspend.S
 
 source_arch/arm/mach-zynq/suspend.o := arch/arm/mach-zynq/suspend.S
 
 deps_arch/arm/mach-zynq/suspend.o := \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/unified.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/linkage.h \
@@ -20,7 +20,7 @@ deps_arch/arm/mach-zynq/suspend.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
     $(wildcard include/config/unused/symbols.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/linkage.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/linkage.h \
 
 arch/arm/mach-zynq/suspend.o: $(deps_arch/arm/mach-zynq/suspend.o)
 

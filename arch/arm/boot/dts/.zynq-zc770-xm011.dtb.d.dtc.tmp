@@ -1,1 +1,0 @@
-arch/arm/boot/dts/zynq-zc770-xm011.dtb: arch/arm/boot/dts/.zynq-zc770-xm011.dtb.dts.tmp arch/arm/boot/dts/zynq-7000.dtsi arch/arm/boot/dts/skeleton.dtsi

@@ -1,1 +1,0 @@
-cmd_net/ipv6/xfrm6_mode_tunnel.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o net/ipv6/xfrm6_mode_tunnel.ko net/ipv6/xfrm6_mode_tunnel.o net/ipv6/xfrm6_mode_tunnel.mod.o

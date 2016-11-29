@@ -1,1 +1,1 @@
-cmd_fs/quota/built-in.o :=  rm -f fs/quota/built-in.o; arm-xilinx-linux-gnueabi-ar rcsD fs/quota/built-in.o
+cmd_fs/quota/built-in.o :=  arm-xilinx-linux-gnueabi-ld -EL    -r -o fs/quota/built-in.o fs/quota/dquot.o fs/quota/quota.o fs/quota/kqid.o 

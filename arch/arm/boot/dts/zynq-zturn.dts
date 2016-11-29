@@ -32,7 +32,8 @@
 	};
 
 	chosen {
-		bootargs = "console=ttyPS0,115200 root=/dev/ram rw earlyprintk";
+		/*bootargs = "console=ttyPS0,115200 root=/dev/ram rw earlyprintk";*/
+		bootargs = "console=ttyPS0,115200 root=/dev/mmcblk0p2 rw earlyprintk rootfstype=ext4 rootwait devtmpfs.mount=0";
 		linux,stdout-path = "/amba/serial@e0001000";
 	};
 };

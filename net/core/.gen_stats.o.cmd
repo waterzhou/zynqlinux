@@ -1,4 +1,4 @@
-cmd_net/core/gen_stats.o := arm-xilinx-linux-gnueabi-gcc -Wp,-MD,net/core/.gen_stats.o.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gen_stats)"  -D"KBUILD_MODNAME=KBUILD_STR(gen_stats)" -c -o net/core/gen_stats.o net/core/gen_stats.c
+cmd_net/core/gen_stats.o := arm-xilinx-linux-gnueabi-gcc -Wp,-MD,net/core/.gen_stats.o.d  -nostdinc -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi -Iinclude/generated/uapi -include /home/water/zynqAndroid/kk3.10/zynqlinux/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(gen_stats)"  -D"KBUILD_MODNAME=KBUILD_STR(gen_stats)" -c -o net/core/gen_stats.o net/core/gen_stats.c
 
 source_net/core/gen_stats.o := net/core/gen_stats.c
 
@@ -10,13 +10,13 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
   include/uapi/linux/types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
   include/uapi/asm-generic/int-ll64.h \
   arch/arm/include/generated/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/uapi/asm-generic/bitsperlong.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/posix_types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
   include/linux/compiler.h \
@@ -31,8 +31,8 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/posix_types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/posix_types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/posix_types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/posix_types.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
@@ -50,9 +50,9 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
     $(wildcard include/config/unused/symbols.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/linkage.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/bitops.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
@@ -60,14 +60,14 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/irqflags.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/irqflags.h \
     $(wildcard include/config/cpu/v7m.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/ptrace.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/ptrace.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/hwcap.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/hwcap.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/hwcap.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/hwcap.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
@@ -76,13 +76,13 @@ deps_net/core/gen_stats.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/byteorder.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/uapi/linux/byteorder/little_endian.h \
   include/linux/swab.h \
   include/uapi/linux/swab.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/swab.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/swab.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/swab.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
   include/linux/log2.h \
@@ -99,28 +99,28 @@ deps_net/core/gen_stats.o := \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
   include/uapi/linux/kernel.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/sysinfo.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/cache.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/sysinfo.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/dynamic_debug.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
   include/uapi/linux/string.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/string.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/string.h \
   include/linux/errno.h \
   include/uapi/linux/errno.h \
   arch/arm/include/generated/asm/errno.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/errno.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/errno-base.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/div64.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/compiler.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/bug.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/errno.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/errno-base.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/div64.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/compiler.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/debug/bugverbose.h) \
     $(wildcard include/config/arm/lpae.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/opcodes.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/opcodes.h \
     $(wildcard include/config/cpu/endian/be32.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
@@ -138,9 +138,9 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/const.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/const.h \
   include/linux/stat.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/stat.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/stat.h \
   include/uapi/linux/stat.h \
   include/linux/time.h \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
@@ -161,40 +161,40 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/compat.h) \
     $(wildcard include/config/debug/stack/usage.h) \
   include/linux/bug.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/thread_info.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/crunch.h) \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/fpstate.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/domain.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/barrier.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/barrier.h \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arch/has/barriers.h) \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/outercache.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/linux/bottom_half.h \
   include/linux/preempt_mask.h \
   include/linux/spinlock_types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/spinlock_types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/spinlock.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/spinlock.h \
   include/linux/prefetch.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/processor.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/hw_breakpoint.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/unified.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/hw_breakpoint.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
   include/linux/rwlock.h \
   include/linux/spinlock_api_smp.h \
@@ -230,8 +230,8 @@ deps_net/core/gen_stats.o := \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/atomic.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/cmpxchg.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/atomic.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/cmpxchg.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
@@ -295,7 +295,7 @@ deps_net/core/gen_stats.o := \
   include/linux/page-flags-layout.h \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   include/generated/bounds.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/page.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
     $(wildcard include/config/cpu/copy/feroceon.h) \
@@ -303,9 +303,9 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/kuser/helpers.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/glue.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/pgtable-2level-types.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/memory.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/glue.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/pgtable-2level-types.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/memory.h \
     $(wildcard include/config/need/mach/memory/h.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/dram/size.h) \
@@ -362,12 +362,12 @@ deps_net/core/gen_stats.o := \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/uapi/linux/timex.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/param.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/param.h \
   arch/arm/include/generated/asm/param.h \
   include/asm-generic/param.h \
     $(wildcard include/config/hz.h) \
   include/uapi/asm-generic/param.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/timex.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/timex.h \
   include/linux/topology.h \
     $(wildcard include/config/sched/smt.h) \
     $(wildcard include/config/sched/mc.h) \
@@ -376,17 +376,17 @@ deps_net/core/gen_stats.o := \
   include/linux/smp.h \
   include/linux/llist.h \
     $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/smp.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/smp.h \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/percpu.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/topology.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/topology.h \
     $(wildcard include/config/arm/cpu/topology.h) \
   include/asm-generic/topology.h \
   include/linux/sysctl.h \
@@ -394,10 +394,10 @@ deps_net/core/gen_stats.o := \
   include/linux/rbtree.h \
   include/uapi/linux/sysctl.h \
   include/linux/elf.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/elf.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/user.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/elf.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/user.h \
   include/uapi/linux/elf.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/elf-em.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
     $(wildcard include/config/debug/kobject/release.h) \
   include/linux/sysfs.h \
@@ -413,7 +413,7 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/ppc64.h) \
   include/linux/jump_label.h \
     $(wildcard include/config/jump/label.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/module.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
   include/asm-generic/module.h \
     $(wildcard include/config/have/mod/arch/specific.h) \
@@ -436,8 +436,8 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/irq/time/accounting.h) \
   include/linux/context_tracking_state.h \
   include/linux/static_key.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/hardirq.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/irq.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/hardirq.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/irq.h \
     $(wildcard include/config/sparse/irq.h) \
     $(wildcard include/config/multi/irq/handler.h) \
   include/linux/irq_cpustat.h \
@@ -447,10 +447,10 @@ deps_net/core/gen_stats.o := \
   include/linux/timerqueue.h \
   include/linux/socket.h \
   arch/arm/include/generated/asm/socket.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/socket.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/socket.h \
   arch/arm/include/generated/asm/sockios.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/sockios.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/sockios.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/sockios.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/sockios.h \
   include/linux/uio.h \
   include/uapi/linux/uio.h \
   include/uapi/linux/socket.h \
@@ -488,7 +488,7 @@ deps_net/core/gen_stats.o := \
   include/linux/plist.h \
     $(wildcard include/config/debug/pi/list.h) \
   include/linux/miscdevice.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/major.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/major.h \
   include/linux/device.h \
     $(wildcard include/config/debug/devres.h) \
     $(wildcard include/config/acpi.h) \
@@ -504,14 +504,14 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/pm/clk.h) \
     $(wildcard include/config/pm/generic/domains.h) \
   include/linux/ratelimit.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/device.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
     $(wildcard include/config/iommu/api.h) \
     $(wildcard include/config/arm/dma/use/iommu.h) \
     $(wildcard include/config/arch/omap.h) \
   include/linux/pm_wakeup.h \
   include/linux/delay.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/delay.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/delay.h \
   include/linux/rculist.h \
   include/linux/dmaengine.h \
     $(wildcard include/config/async/tx/enable/channel/switch.h) \
@@ -550,22 +550,22 @@ deps_net/core/gen_stats.o := \
   include/linux/auxvec.h \
   include/uapi/linux/auxvec.h \
   arch/arm/include/generated/asm/auxvec.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/auxvec.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/auxvec.h \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/guard.h) \
     $(wildcard include/config/page/debug/something/else.h) \
   include/linux/uprobes.h \
     $(wildcard include/config/uprobes.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/mmu.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
   include/linux/range.h \
   include/linux/bit_spinlock.h \
   include/linux/shrinker.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/pgtable.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/proc-fns.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/glue-proc.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/proc-fns.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/glue-proc.h \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm720t.h) \
     $(wildcard include/config/cpu/arm740t.h) \
@@ -586,9 +586,9 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/cpu/v7.h) \
     $(wildcard include/config/cpu/pj4b.h) \
   include/asm-generic/pgtable-nopud.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/pgtable-hwdef.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/pgtable-2level-hwdef.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/tlbflush.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/pgtable-2level-hwdef.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/tlbflush.h \
     $(wildcard include/config/smp/on/up.h) \
     $(wildcard include/config/cpu/tlb/v4wt.h) \
     $(wildcard include/config/cpu/tlb/fa.h) \
@@ -651,16 +651,16 @@ deps_net/core/gen_stats.o := \
   include/linux/ipc.h \
   include/uapi/linux/ipc.h \
   arch/arm/include/generated/asm/ipcbuf.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/ipcbuf.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/ipcbuf.h \
   arch/arm/include/generated/asm/sembuf.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/sembuf.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/sembuf.h \
   include/linux/signal.h \
     $(wildcard include/config/old/sigaction.h) \
   include/uapi/linux/signal.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/signal.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/signal.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/signal-defs.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/sigcontext.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/signal.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/signal.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/signal-defs.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/sigcontext.h \
   arch/arm/include/generated/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/uapi/asm-generic/siginfo.h \
@@ -689,7 +689,7 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/associative/array.h) \
   include/linux/selinux.h \
     $(wildcard include/config/security/selinux.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/pgtable-2level.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/pgtable-2level.h \
   include/asm-generic/pgtable.h \
     $(wildcard include/config/have/arch/soft/dirty.h) \
     $(wildcard include/config/arch/uses/numa/prot/none.h) \
@@ -704,11 +704,11 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/debug/tlbflush.h) \
   include/linux/vm_event_item.h \
     $(wildcard include/config/migration.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/scatterlist.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/scatterlist.h \
     $(wildcard include/config/arm/has/sg/chain.h) \
   include/asm-generic/scatterlist.h \
     $(wildcard include/config/need/sg/dma/length.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/io.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/io.h \
     $(wildcard include/config/need/mach/io/h.h) \
     $(wildcard include/config/pci.h) \
     $(wildcard include/config/pcmcia/soc/common.h) \
@@ -747,14 +747,14 @@ deps_net/core/gen_stats.o := \
   include/linux/random.h \
     $(wildcard include/config/arch/random.h) \
   include/uapi/linux/random.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/ioctl.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/ioctl.h \
   arch/arm/include/generated/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/uapi/asm-generic/ioctl.h \
   include/linux/fcntl.h \
   include/uapi/linux/fcntl.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/uapi/asm/fcntl.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/asm-generic/fcntl.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi/asm/fcntl.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/asm-generic/fcntl.h \
   include/uapi/linux/net.h \
   include/linux/textsearch.h \
   include/linux/slab.h \
@@ -770,12 +770,12 @@ deps_net/core/gen_stats.o := \
   include/linux/slab_def.h \
   include/linux/reciprocal_div.h \
   include/net/checksum.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/uaccess.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/uaccess.h \
     $(wildcard include/config/have/efficient/unaligned/access.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/checksum.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/checksum.h \
   include/linux/in6.h \
   include/uapi/linux/in6.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/libc-compat.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/libc-compat.h \
   include/linux/dma-mapping.h \
     $(wildcard include/config/has/dma.h) \
     $(wildcard include/config/arch/has/dma/set/coherent/mask.h) \
@@ -783,12 +783,12 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/need/dma/map/state.h) \
   include/linux/dma-attrs.h \
   include/linux/dma-direction.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/dma-mapping.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/dma-mapping.h \
   include/linux/dma-debug.h \
     $(wildcard include/config/dma/api/debug.h) \
   include/asm-generic/dma-coherent.h \
     $(wildcard include/config/have/generic/dma/coherent.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/arch/arm/include/asm/xen/hypervisor.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/asm/xen/hypervisor.h \
   include/asm-generic/dma-mapping-common.h \
   include/linux/netdev_features.h \
   include/net/flow_keys.h \
@@ -807,7 +807,7 @@ deps_net/core/gen_stats.o := \
   include/net/netns/mib.h \
     $(wildcard include/config/xfrm/statistics.h) \
   include/net/snmp.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/snmp.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/snmp.h \
   include/linux/u64_stats_sync.h \
   include/net/netns/unix.h \
   include/net/netns/packet.h \
@@ -845,14 +845,14 @@ deps_net/core/gen_stats.o := \
   include/linux/list_lru.h \
   include/linux/radix-tree.h \
   include/linux/semaphore.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/fiemap.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/fiemap.h \
   include/linux/migrate_mode.h \
   include/linux/percpu-rwsem.h \
   include/uapi/linux/fs.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/limits.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/limits.h \
   include/linux/quota.h \
     $(wildcard include/config/quota/netlink/interface.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/dqblk_xfs.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/dqblk_xfs.h \
   include/linux/dqblk_v1.h \
   include/linux/dqblk_v2.h \
   include/linux/dqblk_qtree.h \
@@ -861,8 +861,8 @@ deps_net/core/gen_stats.o := \
   include/linux/nfs_fs_i.h \
   include/linux/netfilter.h \
     $(wildcard include/config/nf/nat/needed.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/if.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/hdlc/ioctl.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/if.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/hdlc/ioctl.h \
   include/linux/in.h \
   include/uapi/linux/in.h \
   include/uapi/linux/netfilter.h \
@@ -872,7 +872,7 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/bridge/ebt/ulog.h) \
   include/net/netns/nftables.h \
   include/net/netns/xfrm.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/xfrm.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/xfrm.h \
   include/net/flowcache.h \
   include/linux/seq_file_net.h \
   include/linux/seq_file.h \
@@ -880,8 +880,8 @@ deps_net/core/gen_stats.o := \
   include/net/dsa.h \
   include/net/netprio_cgroup.h \
   include/linux/cgroup.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/cgroupstats.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/taskstats.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/cgroupstats.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/taskstats.h \
   include/linux/percpu-refcount.h \
   include/linux/cgroup_subsys.h \
     $(wildcard include/config/cgroup/debug.h) \
@@ -891,7 +891,7 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/cgroup/net/classid.h) \
     $(wildcard include/config/cgroup/perf.h) \
     $(wildcard include/config/cgroup/hugetlb.h) \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/neighbour.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/neighbour.h \
   include/linux/netlink.h \
   include/net/scm.h \
     $(wildcard include/config/security/network.h) \
@@ -902,15 +902,15 @@ deps_net/core/gen_stats.o := \
     $(wildcard include/config/security/yama.h) \
   include/uapi/linux/netlink.h \
   include/uapi/linux/netdevice.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/if_packet.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/if_packet.h \
   include/linux/if_link.h \
   include/uapi/linux/if_link.h \
   include/uapi/linux/rtnetlink.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/if_addr.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/gen_stats.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/if_addr.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/gen_stats.h \
   include/net/netlink.h \
   include/net/gen_stats.h \
-  /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/include/uapi/linux/pkt_sched.h \
+  /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/pkt_sched.h \
 
 net/core/gen_stats.o: $(deps_net/core/gen_stats.o)
 

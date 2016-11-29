@@ -1,1 +1,0 @@
-cmd_drivers/rpmsg/virtio_rpmsg_bus.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o drivers/rpmsg/virtio_rpmsg_bus.ko drivers/rpmsg/virtio_rpmsg_bus.o drivers/rpmsg/virtio_rpmsg_bus.mod.o

@@ -1,1 +1,0 @@
-cmd_net/ipv4/ip_tunnel.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o net/ipv4/ip_tunnel.ko net/ipv4/ip_tunnel.o net/ipv4/ip_tunnel.mod.o

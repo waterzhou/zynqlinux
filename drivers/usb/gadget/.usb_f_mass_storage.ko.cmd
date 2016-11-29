@@ -1,1 +1,0 @@
-cmd_drivers/usb/gadget/usb_f_mass_storage.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /home/water/zynqAndroid/xilinx/Kernel/linux-xlnx/scripts/module-common.lds --build-id  -o drivers/usb/gadget/usb_f_mass_storage.ko drivers/usb/gadget/usb_f_mass_storage.o drivers/usb/gadget/usb_f_mass_storage.mod.o

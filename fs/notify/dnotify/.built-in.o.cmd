@@ -1,1 +1,1 @@
-cmd_fs/notify/dnotify/built-in.o :=  rm -f fs/notify/dnotify/built-in.o; arm-xilinx-linux-gnueabi-ar rcsD fs/notify/dnotify/built-in.o
+cmd_fs/notify/dnotify/built-in.o :=  arm-xilinx-linux-gnueabi-ld -EL    -r -o fs/notify/dnotify/built-in.o fs/notify/dnotify/dnotify.o 
