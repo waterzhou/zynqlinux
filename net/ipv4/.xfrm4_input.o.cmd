@@ -746,6 +746,7 @@ deps_net/ipv4/xfrm4_input.o := \
   include/linux/in.h \
   include/uapi/linux/in.h \
   include/uapi/linux/netfilter.h \
+  include/net/flow.h \
   include/linux/netfilter_ipv4.h \
   include/uapi/linux/netfilter_ipv4.h \
   include/net/ip.h \
@@ -802,7 +803,6 @@ deps_net/ipv4/xfrm4_input.o := \
     $(wildcard include/config/nf/defrag/ipv6.h) \
     $(wildcard include/config/wext/core.h) \
     $(wildcard include/config/ip/vs.h) \
-  include/net/flow.h \
   include/net/netns/core.h \
   include/net/netns/mib.h \
     $(wildcard include/config/xfrm/statistics.h) \

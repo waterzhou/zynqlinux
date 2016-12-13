@@ -801,6 +801,7 @@ deps_net/ipv4/af_inet.o := \
   /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/if.h \
   /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi/linux/hdlc/ioctl.h \
   include/uapi/linux/netfilter.h \
+  include/net/flow.h \
   include/linux/inet.h \
   include/linux/igmp.h \
   include/uapi/linux/igmp.h \
@@ -854,7 +855,6 @@ deps_net/ipv4/af_inet.o := \
     $(wildcard include/config/nf/defrag/ipv6.h) \
     $(wildcard include/config/wext/core.h) \
     $(wildcard include/config/ip/vs.h) \
-  include/net/flow.h \
   include/net/netns/core.h \
   include/net/netns/mib.h \
     $(wildcard include/config/xfrm/statistics.h) \
@@ -1013,6 +1013,9 @@ deps_net/ipv4/af_inet.o := \
   include/linux/ipv6_route.h \
   include/uapi/linux/ipv6_route.h \
   include/net/secure_seq.h \
+  include/linux/mroute.h \
+  include/linux/pim.h \
+  include/uapi/linux/mroute.h \
 
 net/ipv4/af_inet.o: $(deps_net/ipv4/af_inet.o)
 

@@ -980,6 +980,9 @@ deps_net/ipv4/igmp.o := \
   include/net/protocol.h \
   include/linux/netfilter_ipv4.h \
   include/uapi/linux/netfilter_ipv4.h \
+  include/linux/mroute.h \
+  include/linux/pim.h \
+  include/uapi/linux/mroute.h \
 
 net/ipv4/igmp.o: $(deps_net/ipv4/igmp.o)
 
