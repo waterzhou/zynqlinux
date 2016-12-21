@@ -1,0 +1,6 @@
+*.[oa]
+*.o.cmd
+.tmp_*
+.version
+*.cmd
+.vmlinux.cmd

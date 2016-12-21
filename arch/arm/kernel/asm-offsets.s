@@ -14,11 +14,11 @@
 @	compiled by GNU C version 4.7.2, GMP version 6.0.0, MPFR version 3.1.2-p8, MPC version 1.0.2
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include
+@ -I /home/water/Android4.2.2/zynqlinux/arch/arm/include
 @ -I arch/arm/include/generated -I include
-@ -I /home/water/zynqAndroid/kk3.10/zynqlinux/arch/arm/include/uapi
+@ -I /home/water/Android4.2.2/zynqlinux/arch/arm/include/uapi
 @ -I arch/arm/include/generated/uapi
-@ -I /home/water/zynqAndroid/kk3.10/zynqlinux/include/uapi
+@ -I /home/water/Android4.2.2/zynqlinux/include/uapi
 @ -I include/generated/uapi
 @ -iprefix /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/
 @ -isysroot /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc
@@ -27,7 +27,7 @@
 @ -D KBUILD_MODNAME=KBUILD_STR(asm_offsets) -D __CS_SOURCERYGXX_MAJ__=2015
 @ -D __CS_SOURCERYGXX_MIN__=5 -D __CS_SOURCERYGXX_REV__=17
 @ -isystem /opt/Xilinx/SDK/2016.3/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include
-@ -include /home/water/zynqAndroid/kk3.10/zynqlinux/include/linux/kconfig.h
+@ -include /home/water/Android4.2.2/zynqlinux/include/linux/kconfig.h
 @ -MD arch/arm/kernel/.asm-offsets.s.d arch/arm/kernel/asm-offsets.c
 @ -mlittle-endian -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -marm
 @ -march=armv7-a -mfloat-abi=soft -mtls-dialect=gnu

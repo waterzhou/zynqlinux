@@ -958,6 +958,7 @@
 0x00000000	v4l2_i2c_subdev_init	vmlinux	EXPORT_SYMBOL_GPL
 0x00000000	_raw_write_unlock	vmlinux	EXPORT_SYMBOL
 0x00000000	sdhci_remove_host	vmlinux	EXPORT_SYMBOL_GPL
+0x00000000	hiddev_hid_event	vmlinux	EXPORT_SYMBOL_GPL
 0x00000000	fib_default_rule_pref	vmlinux	EXPORT_SYMBOL
 0x00000000	irq_domain_xlate_onecell	vmlinux	EXPORT_SYMBOL_GPL
 0x00000000	kmap_to_page	vmlinux	EXPORT_SYMBOL

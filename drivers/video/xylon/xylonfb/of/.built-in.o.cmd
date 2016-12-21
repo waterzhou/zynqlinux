@@ -1,1 +1,0 @@
-cmd_drivers/video/xylon/xylonfb/of/built-in.o :=  arm-xilinx-linux-gnueabi-ld -EL    -r -o drivers/video/xylon/xylonfb/of/built-in.o drivers/video/xylon/xylonfb/of/../core/built-in.o drivers/video/xylon/xylonfb/of/xylonfb_of.o 
