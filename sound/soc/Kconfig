@@ -16,7 +16,7 @@ menuconfig SND_SOC
 	  specific driver for your SoC platform below.
 	  
 	  ASoC provides power efficient ALSA support for embedded battery powered
-	  SoC based systems like PDA's, Phones and Personal Media Players.
+	  SoC based systems like PDAs, Phones and Personal Media Players.
 
 	  This ASoC audio support can also be built as a module.  If so, the module
 	  will be called snd-soc-core.
@@ -61,6 +61,7 @@ source "sound/soc/codecs/Kconfig"
 
 # generic frame-work
 source "sound/soc/generic/Kconfig"
+source "sound/soc/xlnx/Kconfig"
 
 endif	# SND_SOC
 
