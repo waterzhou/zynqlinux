@@ -1,1 +1,0 @@
-zynq-zed.o: arch/arm/boot/dts/zynq-zed.dts

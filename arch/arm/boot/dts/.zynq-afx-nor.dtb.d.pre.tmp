@@ -1,1 +1,0 @@
-zynq-afx-nor.o: arch/arm/boot/dts/zynq-afx-nor.dts
