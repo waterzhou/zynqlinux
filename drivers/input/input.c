@@ -989,10 +989,12 @@ static int input_attach_handler(struct input_dev *dev, struct input_handler *han
 		return -ENODEV;
 
 	error = handler->connect(handler, dev, id);
+
 	if (error && error != -ENODEV)
 		pr_err("failed to attach handler %s to device %s, error: %d\n",
 		       handler->name, kobject_name(&dev->dev.kobj), error);
-
+    else
+		pr_err("attach handler %s to device %s\r\n", handler->name, kobject_name(&dev->dev.kobj));
 	return error;
 }
 
